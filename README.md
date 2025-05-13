@@ -50,7 +50,14 @@ Font Awesome for icons
 
 📷 Screenshots
 
-![image](https://github.com/user-attachments/assets/583b99b1-1051-43e4-bea2-a62cd45df932)
+![image](https://github.com/user-attachments/assets/d2213f08-1fae-4d9c-a87c-251e406b1a62)
+![image](https://github.com/user-attachments/assets/3b48e6e2-c793-455a-b5f6-286b72f6eff4)
+![image](https://github.com/user-attachments/assets/6283ac93-9b80-4334-911a-17fc98c565f2)
+![image](https://github.com/user-attachments/assets/4aa9c911-3727-43a3-9cda-ce5e03c599c8)
+
+
+
+
 
 
 ```
