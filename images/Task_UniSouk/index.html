@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nullBrains Landing Page</title>
+
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="main-container">
+    <header class="header">
+      <div class="logo">
+        <h1 class="company-name">nullBrains<span class="dark-blue">.</span></h1>
+      </div>
+      <nav class="web-navbar">
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+
+        <div class="search-container">
+          <i class="fas fa-search search-icon" onclick="toggleSearch()"></i>
+          <input
+            type="text"
+            class="search-input"
+            id="searchBox"
+            placeholder="Search..."
+            onkeyup="searchContent()"
+          />
+        </div>
+      </nav>
+      <div class="btn-group web-navbar">
+        <button class="sign-in-btn">Sign In</button>
+        <button class="sign-up-btn bg-dark-blue">Sign Up</button>
+      </div>
+      <!-- Hamburger Icon -->
+      <div class="hamburger" id="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <!-- Mobile Overlay Menu -->
+      <nav class="nav-overlay" id="navOverlay">
+        <div class="close-btn" id="closeBtn">&times;</div>
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+        <div class="search-container">
+          <input type="text" class="search-input" placeholder="Search..." />
+        </div>
+        <div class="btn-group">
+          <button class="sign-in-btn">Sign In</button>
+          <button class="sign-up-btn bg-dark-blue">Sign Up</button>
+        </div>
+      </nav>
+    </header>
+
+    <hr class="border-bottom" />
+
+    <!-- Hero Section -->
+    <section class="hero fade-in-up delay-1">
+      <h1>Start Crafting Your</h1>
+      <h1 class="highlight dark-blue">Next Great Idea</h1>
+      <p>Simplifying the creation of landing pages, blog pages,</p>
+      <p>application pages and so much more!</p>
+
+      <button class="cta-button purchase-now-btn bg-dark-blue">
+        Purchase Now
+      </button>
+      <span class="label-green">only $15/mo</span>
+      <a href="#" class="learn-more dark-blue">Learn more</a>
+    </section>
+
+    <!-- Trusted Logos -->
+    <div class="trusted-logos">
+      <p>Trusted by top-leading companies.</p>
+      <div>
+        <img src="./images/disney_logo.png" height="30" alt="Disney" />
+        <img src="./images/google_logo.png" height="30" alt="Google" />
+        <img src="./images/hubspot.png" height="30" alt="HubSpot" />
+        <img src="./images/youtube_logo.png" height="30" alt="YouTube" />
+        <img src="./images/slack_logo.png" height="30" alt="Slack" />
+        <img src="./images/shopify_logo.png" height="30" alt="Shopify" />
+      </div>
+    </div>
+
+    <!-- Productivity & Automation Features Section -->
+    <section class="productivity-section">
+      <div class="productivity-container slide-in-right delay-1">
+        <div>
+          <img
+            src="./images/image (5).png"
+            height="260"
+            alt="productivity-img"
+            class="productivity-img"
+          />
+        </div>
+
+        <div class="productivity-content">
+          <h2>Boost Productivity</h2>
+          <p>Build an atmosphere that creates productivity in</p>
+          <p>your organization and your company culture.</p>
+          <ul class="listing-wrapper">
+            <li>
+              <img src="./images/points_icon.jpg" alt="icon" /> Maximize
+              productivity and growth
+            </li>
+            <li>
+              <img src="./images/points_icon.jpg" alt="icon" /> Speed past your
+              competition
+            </li>
+            <li>
+              <img src="./images/points_icon.jpg" alt="icon" /> Learn the top
+              techniques
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="automated-tasks-container slide-in-right delay-1">
+        <div class="automated-tasks-content">
+          <h2>Automated Tasks</h2>
+          <p>Save time and money with our revolutionary</p>
+          <p>services. We are the leaders in the industry.</p>
+          <ul class="listing-wrapper">
+            <li>
+              <img src="./images/points_icon.jpg" alt="icon" /> Automated task
+              management workflow
+            </li>
+            <li>
+              <img src="./images/points_icon.jpg" alt="icon" />Detailed
+              analytics for your data
+            </li>
+            <li>
+              <img src="./images/points_icon.jpg" alt="icon" />some awesome
+              integrations
+            </li>
+          </ul>
+        </div>
+        <div>
+          <img
+            src="./images/image (6).png"
+            height="310"
+            alt="productivity-img"
+            class="productivity-img"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- More Features Grid -->
+    <section class="features-section">
+      <h2>Our Features</h2>
+      <p>Check out our list of awesome features below.</p>
+      <div class="features-grid">
+        <div class="feature-box zoom-in delay-1">
+          <i class="fa-solid fa-award"></i>
+
+          <h4>Certifications</h4>
+          <p>
+            Each of our plan will provide you and your team with certifications.
+          </p>
+        </div>
+        <div class="feature-box zoom-in delay-1">
+          <i class="fa-solid fa-bell"></i>
+          <h4>Notifications</h4>
+          <p>
+            Send out notifications to all your customers to keep them engaged.
+          </p>
+        </div>
+        <div class="feature-box zoom-in delay-1">
+          <i class="fa-solid fa-cube"></i>
+          <h4>Bundles</h4>
+          <p>High-quality bundles of awesome tools to help you out.</p>
+        </div>
+        <div class="feature-box zoom-in delay-1">
+          <i class="fa-brands fa-dev"></i>
+          <h4>Developer Tools</h4>
+          <p>
+            Developer tools to help grow your applications and keep it
+            up-to-date.
+          </p>
+        </div>
+        <div class="feature-box zoom-in delay-1">
+          <i class="fa-solid fa-box"></i>
+          <h4>Building Blocks</h4>
+          <p>
+            The right kind of building blocks to take your company to the next
+            level.
+          </p>
+        </div>
+        <div class="feature-box zoom-in delay-1">
+          <i class="fa fa-gift" aria-hidden="true"></i>
+          <h4>Coupons</h4>
+          <p>
+            Coupons system to provide special offers and discounts for your app.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+      <div class="team-header-container">
+        <div class="team-title-wrapper">
+          <h2 class="light-blue">Our Team</h2>
+          <h5>An incredible team of</h5>
+          <h5>amazing individuals</h5>
+        </div>
+        <div class="grey-container"></div>
+      </div>
+
+      <div class="team-container">
+        <div class="team-member fade-in-up">
+          <img src="./images/person1.png" alt="Freddy" height="230" />
+          <h4>Freddy Smith</h4>
+          <p class="light-blue">CEO and Founder</p>
+          <ul class="social-items">
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-github"></i></li>
+          </ul>
+        </div>
+        <div class="team-member fade-in-up">
+          <img src="./images/person2.png" alt="Carl" height="230" />
+          <h4>Carl Jones</h4>
+          <p class="light-blue">CTO and Co-Founder</p>
+          <ul class="social-items">
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-github"></i></li>
+          </ul>
+        </div>
+        <div class="team-member fade-in-up">
+          <img src="./images/person3.png" alt="Susan" height="230" />
+          <h4>Susan Peterson</h4>
+          <p class="light-blue">Marketing Directory</p>
+          <ul class="social-items">
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-github"></i></li>
+          </ul>
+        </div>
+        <div class="team-member fade-in-up">
+          <img src="./images/person4.png" alt="Tommy" height="230" />
+          <h4>Tommy Barnes</h4>
+          <p class="light-blue">Designer</p>
+          <ul class="social-items">
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-github"></i></li>
+          </ul>
+        </div>
+        <div class="team-member fade-in-up">
+          <img src="./images/person5.png" alt="Ron" height="230" />
+          <h4>Ron Jonson</h4>
+          <p class="light-blue">Senior Developer</p>
+          <ul class="social-items">
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-github"></i></li>
+          </ul>
+        </div>
+        <div class="team-member fade-in-up">
+          <img src="./images/person6.png" alt="Pete" height="230" />
+          <h4>Pete Tomplins</h4>
+          <p class="light-blue">Web Developer</p>
+          <ul class="social-items">
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-github"></i></li>
+          </ul>
+        </div>
+        <div class="team-member fade-in-up">
+          <img src="./images/person7.png" alt="Katy" height="230" />
+          <h4>Katy Richards</h4>
+          <p class="light-blue">Sales Manager</p>
+          <ul class="social-items">
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-github"></i></li>
+          </ul>
+        </div>
+        <div class="team-member fade-in-up">
+          <img src="./images/person8.png" alt="Alexis" height="230" />
+          <h4>Alexis Jordan</h4>
+          <p class="light-blue">Affiliate Manager</p>
+          <ul class="social-items">
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-github"></i></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+      <h2>The Project Blog</h2>
+      <p class="blog-section-descr">
+        Designs and layouts to help you with your app.
+      </p>
+      <div class="blog-container">
+        <div class="blog-card">
+          <div>
+            <img
+              src="./images/refreshing.png"
+              alt="refreshing"
+              height="410px"
+            />
+          </div>
+          <div class="card-content bg-purple">
+            <p class="blog-card-label text-purple bg-white">Resources</p>
+            <p class="blog-card-title">Refreshing Designs</p>
+            <p class="blog-card-descr">
+              Quench satisfying designs to help you stir up emotion and tell a
+              story.
+            </p>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div>
+            <img src="./images/lifestyle.png" alt="Healthier Lifestyle" />
+          </div>
+          <div class="card-content bg-card-blue">
+            <p class="blog-card-label text-card-blue bg-white">Lifestyle</p>
+            <p class="blog-card-title">Healthier Lifestyle</p>
+            <p class="blog-card-descr">
+              living a healthier lifestyle will help with your productivity and
+              your mind-set.
+            </p>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <div>
+            <img src="./images/gaming.png" alt="Gaming" />
+          </div>
+          <div class="card-content bg-orange">
+            <p class="blog-card-label text-orange bg-white">Entertainment</p>
+            <p class="blog-card-title">Gaming Evolution</p>
+            <p class="blog-card-descr">
+              Learn about the evolution of gaming and how it started a
+              revolution.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="blog-container">
+        <div class="blog-card rounded">
+          <div class="img-container">
+            <img
+              src="./images/workspace.png"
+              alt="Workstations"
+              height="220px"
+              class="lower-card-img"
+            />
+          </div>
+          <div
+            class="card-content text-black card-content-border lower-card-content"
+          >
+            <p class="blog-card-label bg-dark-blue text-white">Inspiration</p>
+            <p class="lower-card-title">Best Workstations of the Year</p>
+            <p class="lower-card-descr">
+              Check out these inspiring workstations to get ideas on how to
+              level-up your workstation.
+            </p>
+          </div>
+        </div>
+
+        <div class="blog-card rounded">
+          <div class="img-container">
+            <img
+              src="./images/eating.png"
+              alt="Eating for Productivity"
+              height="220px"
+              class="lower-card-img"
+            />
+          </div>
+          <div
+            class="card-content text-black card-content-border lower-card-content"
+          >
+            <p class="blog-card-label bg-peach text-white">food</p>
+            <p class="lower-card-title">Eating for Productivity</p>
+            <p class="lower-card-descr">
+              Learn how to be more disciplined in your diet and how you can eat
+              to maximize productivity.
+            </p>
+          </div>
+        </div>
+        <div class="blog-card rounded">
+          <div class="img-container">
+            <img
+              src="./images/mindset.png"
+              alt="Design Mind-set"
+              height="220px"
+              class="lower-card-img"
+            />
+          </div>
+          <div
+            class="card-content text-black card-content-border lower-card-content"
+          >
+            <p class="blog-card-label bg-purple text-white">resources</p>
+            <p class="lower-card-title">A Design Mind-set</p>
+            <p class="lower-card-descr">
+              What does it mean to have a design mind-set? Learn how to improve
+              your eye for design.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <ul class="footer-items">
+        <li>About</li>
+        <li>Blog</li>
+        <li>Team</li>
+        <li>Pricing</li>
+        <li>Contact</li>
+        <li>Terms</li>
+      </ul>
+      <ul class="footer-items">
+        <li><i class="fa-brands fa-facebook"></i></li>
+        <li><i class="fa-brands fa-instagram"></i></li>
+        <li><i class="fa-brands fa-twitter"></i></li>
+        <li><i class="fa-brands fa-github"></i></li>
+        <li><i class="fa-brands fa-dribbble"></i></li>
+      </ul>
+      <p>&copy; 2025 SomeCompany, Inc. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to External JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
