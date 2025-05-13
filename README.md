@@ -1,6 +1,6 @@
 # healthus.ai Landing Page
 
-A responsive landing page built using HTML, CSS, and JavaScript with full mobile/tablet/laptop support. This project includes a responsive navbar, animated blog image cards, and a clean layout with hover effects.
+A responsive landing page built using HTML, CSS, and JavaScript with full mobile/tablet/laptop support. 
 
 ---
 
